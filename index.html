@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javaacript Mini Projects</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-image: url('bg.jpg');
+            /* Add your image file path here */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+        }
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 5rem;
+            white-space: nowrap;
+            /* Keeps the text on one line */
+            margin: 0;
+            padding: 0;
+        }
+
+        .explore-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #0074d9;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+
+        .explore-button:hover {
+            background-color: #063568;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 1rem;
+            }
+
+            .explore-button {
+                padding: 10px 20px;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width: 1000px) {
+
+            /* Your CSS styles for screens between 769px and 1200px wide */
+            h1 {
+                font-size: 2rem;
+            }
+
+            .explore-button {
+                padding: 10px 20px;
+            }
+        }
+
+        @media (min-width: 1000px)  {
+
+            /* Your CSS styles for screens between 769px and 1200px wide */
+            h1 {
+                font-size: 4rem;
+            }
+
+            .explore-button {
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop>
+        <source src="bg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="content">
+        <h1>Javascript Mini Projects</h1>
+        <br><br><br>
+
+        <a href="https://github.com/yogi-verma/quizify.git" class="explore-button">Quizify</a>
+        <br><br><br>
+        <a href="https://github.com/yogi-verma/Wishlist.git" class="explore-button">Wishlist</a>
+        <br><br><br>
+        <a href="https://github.com/yogi-verma/form_validation.git" class="explore-button">Form-Validation</a>
+        <br><br><br>
+        <a href="https://github.com/yogi-verma/Notes-App.git" class="explore-button">Notes-app</a>
+    </div>
+</body>
+
+</html>
